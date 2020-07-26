@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="15dp">
+
+    <TextView
+        android:id="@+id/newsSimpleListItemTime"
+        android:text="下午2:17"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/newsSimpleListItemParent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/news_simple_list_item_background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/newsSimpleListItemPicture"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:src="@drawable/test"/>
+            <Button
+                android:id="@+id/newsSimpleListItemSource"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="中国新闻网"
+                android:textColor="@color/sourceCololr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/newsSimpleListItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="俄央行宣布下调基准利率至4.25% 再创历史新低"/>
+        <TextView
+            android:id="@+id/newsSimpleListItemContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="俄罗斯央行24日宣布，下调基准利率25个基点至4.25%，再次创下俄历史新低"
+            android:maxHeight="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>

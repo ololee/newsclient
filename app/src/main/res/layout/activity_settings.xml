@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    tools:context=".view.activitys.ColorSettingsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settingToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:background="@color/green"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AlertDialog.AppCompat.Light"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="客户端配置"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/settingSave"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:text="确定"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="日期选择"/>
+        <Spinner
+            android:id="@+id/date_chooser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/time_type" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="频道选择"/>
+        <Spinner
+            android:id="@+id/channel_chooser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/channel_type" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="加载条数设置"/>
+
+        <Spinner
+            android:id="@+id/limit_chooser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/limit" />
+    </LinearLayout>
+
+</LinearLayout>

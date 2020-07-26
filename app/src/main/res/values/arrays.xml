@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_type">
+        <item>今天</item>
+        <item>昨天</item>
+        <item>过去7天</item>
+        <item>本周</item>
+        <item>上周</item>
+        <item>本月</item>
+        <item>上月</item>
+        <item>本季度</item>
+        <item>半年来</item>
+        <item>今年</item>
+    </string-array>
+
+    <string-array name="channel_type">
+        <item>头条</item>
+        <item>新闻</item>
+        <item>国内</item>
+        <item>国际</item>
+        <item>政治</item>
+        <item>财经</item>
+        <item>体育</item>
+        <item>娱乐</item>
+        <item>军事</item>
+        <item>教育</item>
+        <item>科技</item>
+        <item>NBA</item>
+        <item>股票</item>
+        <item>星座</item>
+        <item>女性</item>
+        <item>健康</item>
+        <item>育儿</item>
+    </string-array>
+
+    <string-array name="limit">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+</resources>
